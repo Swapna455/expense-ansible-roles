@@ -1,10 +1,9 @@
-
   - name: Install MYSQL librabries
     ansible.builtin.pip:
       name: "{{ item }}"
     loop:
     - cryptography
-    - MySQL
+    - pyMySQL
 
   - name: Install MYSQL server
     ansible.builtin.package:
